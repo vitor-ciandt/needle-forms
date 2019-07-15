@@ -12,6 +12,8 @@ pylint = "*"
 astroid = "==2.2.5"
 isort = "*"
 black = "==19.3b0"
+setuptools = "==41.0.1"
+twine = "==1.13.0"
 
 [packages]
 google-cloud-datastore = "==1.8.0"
