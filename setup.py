@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="needle-forms",
-    version="0.0.3",
+    version="0.0.4",
     author="dmiranda",
     author_email="dmiranda@ciandt.com",
     description="Abstraction layer to GCP resources",
