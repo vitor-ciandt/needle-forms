@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "==4.4.0"
+pytest-mock = "==1.10.3"
+ipython = "==5.8.0"
+pytest-cov = "==2.7.1"
+pylint = "*"
+astroid = "==2.2.5"
+isort = "*"
+black = "==19.3b0"
+
+[packages]
+google-cloud-datastore = "==1.8.0"
+google-cloud-pubsub = "==0.41.0"
+
+[requires]
+python_version = "3.7.3"
+
+[pipenv]
+allow_prereleases = true
