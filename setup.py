@@ -1,3 +1,4 @@
+#pragm
 import setuptools
 
 setuptools.setup(
@@ -16,5 +17,6 @@ setuptools.setup(
     install_requires=[
         'google-cloud-datastore>=1.8.0',
         'google-cloud-pubsub>=0.41.0',
+        'google-cloud-bigquery>=1.21.0',
     ],
 )
