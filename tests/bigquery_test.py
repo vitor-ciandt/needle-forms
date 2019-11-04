@@ -1,6 +1,4 @@
 from abstractions.bigquery import BigQuery
-from unittest.mock import Mock
-from google.cloud.datastore.entity import Entity
 from unittest.mock import patch
 import pytest
 
