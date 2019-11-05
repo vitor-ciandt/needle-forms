@@ -1,8 +1,9 @@
+#pragm
 import setuptools
 
 setuptools.setup(
     name="needle-forms",
-    version="0.0.4",
+    version="0.0.5",
     author="dmiranda",
     author_email="dmiranda@ciandt.com",
     description="Abstraction layer to GCP resources",
@@ -16,5 +17,6 @@ setuptools.setup(
     install_requires=[
         'google-cloud-datastore>=1.8.0',
         'google-cloud-pubsub>=0.41.0',
+        'google-cloud-bigquery>=1.21.0',
     ],
 )

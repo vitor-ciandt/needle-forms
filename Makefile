@@ -38,7 +38,7 @@ test:
 
 .PHONY: cov
 cov:
-	pipenv run pytest --cov=./ --cov-report term --cov-report=xml:coverage.xml
+	pipenv run pytest --cov=./ --cov-report term-missing --cov-report=xml:coverage.xml
 
 .PHONY: lint
 lint:

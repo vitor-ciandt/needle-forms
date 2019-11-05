@@ -9,15 +9,16 @@ pytest-mock = "==1.10.3"
 ipython = "==5.8.0"
 pytest-cov = "==2.7.1"
 pylint = "*"
-astroid = "==2.2.5"
 isort = "*"
 black = "==19.3b0"
 setuptools = "==41.0.1"
 twine = "==1.13.0"
+pytest-sugar = "*"
 
 [packages]
 google-cloud-datastore = "==1.8.0"
 google-cloud-pubsub = "==0.41.0"
+google-cloud-bigquery = "==1.21.0"
 
 [requires]
 python_version = "3.7.3"
