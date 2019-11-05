@@ -6,6 +6,8 @@ import logging
 from typing import List
 from google.cloud import bigquery
 
+__all__ = ("BigQuery",)
+
 _LOG_PREFIX_ = '[BIGQUERY]%s'
 
 
