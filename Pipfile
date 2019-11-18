@@ -22,8 +22,6 @@ google-cloud-bigquery = "==1.21.0"
 psycopg2-binary = "==2.8.4"
 pydal = "==20190915.2"
 pymysql = "==0.9.3"
-needle-forms = {path = "."}
-pipfile = "*"
 
 [requires]
 python_version = "3.7.3"
