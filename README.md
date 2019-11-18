@@ -1,6 +1,6 @@
 # Needle Forms
 
-It is a project containing classes to make easy handling GCP resources such as Datastore and Pubsub.
+It is a project containing classes to make easy handling GCP resources such as Datastore, PubSub and CloudSql.
 
 * [python 3.7.3](https://www.python.org/downloads/release/python-373/)
     * [pipenv](https://docs.pipenv.org/en/latest/install/#installing-pipenv) 
