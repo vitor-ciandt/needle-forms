@@ -7,7 +7,7 @@ from abstractions.cloudsql import CloudSqlModel
 @pytest.fixture()
 def db():
     """"configure the sqlite db to pydal"""
-    return CloudSqlModel('sqlite:memory//db.sqlite3', True)
+    return CloudSqlModel('sqlite:memory//', True)
 
 
 @pytest.fixture()
