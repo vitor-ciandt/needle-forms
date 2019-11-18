@@ -12,7 +12,7 @@ __all__ = ("Datastore",)
 _LOG_PREFIX_ = "[DATASTORE]%s"
 
 
-class Datastore(object):
+class Datastore:
     """
     Class for abstracting the access of the Datastore
     """

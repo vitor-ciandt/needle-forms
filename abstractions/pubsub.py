@@ -9,7 +9,7 @@ __all__ = ("Pubsub",)
 _LOG_PREFIX_ = "[PUBSUB]%s"
 
 
-class Pubsub(object):
+class Pubsub:
     """
     Class for abstracting the access of the Pubsub
     """
