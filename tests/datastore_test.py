@@ -63,3 +63,9 @@ def test_query_entity_with_filters_passing_filters(mocked_datastore):
     filter_list = [["field1", ">=", "field2"]]
     Datastore().query_entity_with_filters("kind", "namespace", filter_list)
     mocked_datastore.return_value.query.assert_called_once()
+
+
+@patch("google.cloud.datastore.Client")
+def test_save_entity(mocked_datastore):
+    Datastore().save_entity("kind", "namespace", {"data": "test"})
+    mocked_datastore.return_value.put.assert_called_once()

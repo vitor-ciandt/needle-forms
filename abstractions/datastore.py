@@ -1,7 +1,7 @@
 """Class for centralizing Datastore operations"""
 
 import logging
-from typing import List
+from typing import List, Tuple
 
 from google.cloud import datastore
 from google.cloud.datastore.entity import Entity
@@ -22,6 +22,19 @@ class Datastore:
     def __init__(self):
         """Constructor"""
         self.client = datastore.Client()
+
+    def save_entity(self, kind: str, namespace: str,
+                    data: dict, exclude_from_indexes: Tuple = ()) -> int:
+        """Save an entity into Datastore"""
+        logging.info(_LOG_PREFIX_, f"[WRITE] {data}")
+        key = self.client.key(kind, namespace=namespace)
+        task = datastore.Entity(
+            key=key, exclude_from_indexes=exclude_from_indexes
+        )
+        task.update(data)
+        self.client.put(task)
+        logging.info(_LOG_PREFIX_, f"[WRITE Saved {task.key.name}")
+        return task.id
 
     def update_entity(
         self, kind: str, namespace: str, entity_id: int, fields_to_update: dict
