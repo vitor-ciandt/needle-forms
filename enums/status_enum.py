@@ -19,3 +19,6 @@ class StatusEnum(Enum):
 
     # Error status (but at least one previous processing succeeded)
     OUTDATED = 4
+
+    # Processing (but at least one previous processing succeeded)
+    REPROCESSING = 5
