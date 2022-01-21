@@ -6,7 +6,7 @@ verify_ssl = true
 [dev-packages]
 pytest = "==4.4.0"
 pytest-mock = "==1.10.3"
-ipython = "==5.8.0"
+ipython = "==7.16.3"
 pytest-cov = "==2.7.1"
 pylint = "*"
 isort = "*"
