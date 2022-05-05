@@ -22,3 +22,6 @@ class StatusEnum(Enum):
 
     # Processing (but at least one previous processing succeeded)
     REPROCESSING = 5
+
+    # Entity was deleted
+    DELETED = 6
